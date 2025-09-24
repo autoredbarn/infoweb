@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoRedBarn — Innovating the Future</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    /* === Preloader === */
+    #preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #fff;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: opacity 0.6s ease, visibility 0.6s;
+    }
+    #preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .preloader-text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      letter-spacing: 1px;
+      color: #212529;
+      animation: fadeText 1.5s infinite alternate;
+    }
+    @keyframes fadeText {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #6c757d;
+    }
+    /* Section titles */
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    /* Footer */
+    footer {
+      background: #212529;
+      color: #adb5bd;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    /* Add Ons */
+    .text-shadow: 10px 10px 12px black;
+  </style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner-border text-primary" role="status"></div>
+  <div class="preloader-text">Auto<span class="text-danger">Red</span>Barn</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Auto<span class="text-danger">Red</span>Barn</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero bg" style="background-image: url('https://images.pexels.com/photos/5710677/pexels-photo-5710677.jpeg');">
+  <div class="container" data-aos="fade-up" data-aos-duration="1200">
+    <h1 class="mb-3 text-light text-shadow">Innovating the Future of Business Intelligence</h1>
+    <p class="mb-4">We build smart, scalable, and cutting-edge tech solutions for businesses worldwide.</p>
+    <a href="#contact" class="btn btn-primary btn-lg rounded-pill">Connect with Us</a>
+  </div>
+</section>
+
+<!-- Solutions -->
+<section id="solutions" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title" data-aos="fade-up">Our Solutions</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-4 h-100">
+          <h5 class="fw-semibold mb-3">Dealership Management Solution (DMS)</h5>
+          <p class="text-muted">End-to-end Full Suite of scalable apps and modules designed and carefully engineered for dealer operations.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-4 h-100">
+          <h5 class="fw-semibold mb-3">Enterprise Resource and Planning (ERP)</h5>
+          <p class="text-muted">Robust Full Scale Solution for data-driven business decisions.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card p-4 h-100">
+          <h5 class="fw-semibold mb-3">Industry-Specific Tailored Solutions</h5>
+          <p class="text-muted">Custom-fit solution for Enterprise Processes designed to match any Industry and Size.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card">
+          <img src="https://picsum.photos/id/382/600/400?blur" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="fw-semibold">BYD</h5>
+            <p class="text-muted small">End-to-end Dealership Management Solution.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card">
+          <img src="https://picsum.photos/id/371/600/400?blur" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="fw-semibold">FUSO</h5>
+            <p class="text-muted small">End-to-end DMS with multi-company report consolidation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card">
+          <img src="https://picsum.photos/id/514/600/400?blur" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="fw-semibold">ISUZU</h5>
+            <p class="text-muted small">Multi-company Financial Operations and consolidation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5 bg-light">
+  <div class="container text-center" data-aos="fade-up" data-aos-duration="1200">
+    <h2 class="section-title">About Us</h2>
+    <p class="lead text-muted">
+      At AutoRedBarn, our passion is innovation, transforming ideas into reality.  
+      Our team is dedicated to building technology  
+      that empowers businesses to thrive in the digital era.
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container text-center" data-aos="fade-up" data-aos-duration="1200">
+    <h2 class="section-title">Our Contact</h2>
+    <p class="mb-4 text-muted">Excited to embark on your business efficiency journey? Connect with us and let’s create something amazing together!</p>
+    <a href="mailto:contact@technova.com" class="btn btn-primary btn-lg rounded-pill">connect@autoredbarn.com</a>
+    <br><br>
+    <div>
+      <h5>+63 917 123 4567</h5>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center" data-aos="fade-up">
+    <p class="mb-1">© 2025 AutoRedBarn. All rights reserved.</p>
+    <div>
+<!--       <a href="#">LinkedIn</a> · 
+      <a href="#">Twitter</a> · 
+      <a href="#">GitHub</a> -->
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,
+    duration: 1000
+  });
+
+  // Preloader fade-out
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("fade-out");
+  });
+</script>
+
+</body>
+</html>
