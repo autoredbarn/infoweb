@@ -93,7 +93,13 @@
       color: #fff;
     }
     /* Add Ons */
-    .text-shadow: 10px 10px 12px black;
+    .text-shadow: {
+      text-shadow: 10px 10px 12px black;
+    }
+    .img-logo {
+      height: 125px;
+      width: 125px;
+    }
   </style>
 </head>
 <body>
@@ -107,7 +113,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Auto<span class="text-danger">Red</span>Barn</a>
+    <div><a href="#"><span><img src="./img/arb-logo-3.png" class="float-left img-logo rounded"></span></a></div>
+    <!-- <div class="justify-content-center"><a class="navbar-brand fw-bold" href="#">Auto<span class="text-danger">Red</span>Barn</a></div> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
